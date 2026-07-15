@@ -39,10 +39,16 @@ The implementation relies on a three-tier frontend architecture:
 - **JavaScript**: An event listener monitors the password input field on every keystroke (`input` event). The script uses Regex to check for uppercase (`/[A-Z]/`), lowercase (`/[a-z]/`), numbers (`/[0-9]/`), and special characters (`/[^A-Za-z0-9]/`). Based on the matched criteria, it assigns a score out of 100 and updates the DOM elements accordingly.
 
 ## 9. Screenshots
-*(Note to user: Replace this text with actual screenshots of your tool in action before submitting to LMS)*
-- *Screenshot 1: The initial empty state.*
-- *Screenshot 2: A weak password (red progress bar).*
-- *Screenshot 3: A strong password meeting all criteria (green progress bar).*
+*(Note: Please save your screenshots in the project folder as `screenshot1.png`, `screenshot2.png`, and `screenshot3.png` to have them display here)*
+
+### Initial State
+![Initial State](screenshot1.png)
+
+### Weak Password Example
+![Weak Password](screenshot2.png)
+
+### Strong Password Example
+![Strong Password](screenshot3.png)
 
 ## 10. Results
 The resulting application is a highly responsive and visually appealing tool. It successfully detects password complexity in milliseconds without requiring any server-side processing. The dynamic progress bar accurately reflects the calculated security score (from 0 to 100), and the feedback messages successfully guide the user toward stronger credential creation.
@@ -62,4 +68,3 @@ The Advanced Password Strength Analyzer successfully addresses the critical need
 ---
 ## Project Links
 - **GitHub Repository**: [https://github.com/sahilbamel04/password-strength-checker](https://github.com/sahilbamel04/password-strength-checker)
-- **Live Demo (GitHub Pages)**: [https://sahilbamel04.github.io/password-strength-checker/](https://sahilbamel04.github.io/password-strength-checker/)
