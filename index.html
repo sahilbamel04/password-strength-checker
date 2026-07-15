@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Password Strength Analyzer</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Password Analyzer</h1>
+            <p>Ensure your credentials are secure against brute-force attacks.</p>
+        </header>
+
+        <main>
+            <div class="input-group">
+                <input type="password" id="passwordInput" placeholder="Enter your password..." autocomplete="off">
+                <button type="button" id="toggleVisibility" aria-label="Toggle password visibility">
+                    <svg id="iconEye" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="none" d="M0 0h24v24H0z"/><path d="M12 3c5.392 0 9.878 3.88 10.819 9-.94 5.12-5.427 9-10.819 9-5.392 0-9.878-3.88-10.819-9C2.121 6.88 6.608 3 12 3zm0 16a9.005 9.005 0 0 0 8.777-7.5A9.005 9.005 0 0 0 12 5a9.005 9.005 0 0 0-8.777 7.5A9.005 9.005 0 0 0 12 19zm0-4a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0-2a1 1 0 1 0 0-2 1 1 0 0 0 0 2z" fill="currentColor"/></svg>
+                </button>
+            </div>
+
+            <div class="strength-meter">
+                <div class="strength-bar-container">
+                    <div id="strengthBar" class="strength-bar"></div>
+                </div>
+                <div class="strength-text-container">
+                    <span id="strengthText">Strength: <strong>None</strong></span>
+                    <span id="scoreText">0/100</span>
+                </div>
+            </div>
+
+            <div class="requirements">
+                <h3>Password Requirements</h3>
+                <ul id="requirementsList">
+                    <li id="req-length" class="unmet">
+                        <span class="indicator"></span> Minimum of 8 characters
+                    </li>
+                    <li id="req-uppercase" class="unmet">
+                        <span class="indicator"></span> At least one uppercase letter
+                    </li>
+                    <li id="req-lowercase" class="unmet">
+                        <span class="indicator"></span> At least one lowercase letter
+                    </li>
+                    <li id="req-number" class="unmet">
+                        <span class="indicator"></span> At least one number
+                    </li>
+                    <li id="req-special" class="unmet">
+                        <span class="indicator"></span> At least one special character
+                    </li>
+                </ul>
+            </div>
+            <div id="feedback" class="feedback"></div>
+        </main>
+        
+        <footer>
+            <p>Developed for LMS Cybersecurity Project</p>
+        </footer>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
