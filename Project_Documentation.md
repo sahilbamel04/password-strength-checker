@@ -41,13 +41,13 @@ The implementation relies on a three-tier frontend architecture:
 ## 9. Screenshots
 
 ### Initial State
-![Initial State](screenshot1.png)
+![Initial State](screenshots/screenshot1.png)
 
 ### Weak Password Example
-![Weak Password](screenshot2.png)
+![Weak Password](screenshots/screenshot2.png)
 
 ### Strong Password Example
-![Strong Password](screenshot3.png)
+![Strong Password](screenshots/screenshot3.png)
 
 ## 10. Results
 The resulting application is a highly responsive and visually appealing tool. It successfully detects password complexity in milliseconds without requiring any server-side processing. The dynamic progress bar accurately reflects the calculated security score (from 0 to 100), and the feedback messages successfully guide the user toward stronger credential creation.
