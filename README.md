@@ -39,7 +39,6 @@ The implementation relies on a three-tier frontend architecture:
 - **JavaScript**: An event listener monitors the password input field on every keystroke (`input` event). The script uses Regex to check for uppercase (`/[A-Z]/`), lowercase (`/[a-z]/`), numbers (`/[0-9]/`), and special characters (`/[^A-Za-z0-9]/`). Based on the matched criteria, it assigns a score out of 100 and updates the DOM elements accordingly.
 
 ## 9. Screenshots
-*(Note: Please save your screenshots in the project folder as `screenshot1.png`, `screenshot2.png`, and `screenshot3.png` to have them display here)*
 
 ### Initial State
 ![Initial State](screenshot1.png)
